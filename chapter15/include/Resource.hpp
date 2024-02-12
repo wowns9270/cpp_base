@@ -78,4 +78,12 @@ public:
         std::cout << std::endl;
     }
 
+    void setAll(const int & v)
+    {
+        for(unsigned i = 0; i< m_length; i++)
+        {
+            m_data[i] = v;
+        }
+    }
+
 };
