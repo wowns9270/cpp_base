@@ -25,6 +25,7 @@ public:
     // {
     //     return Cents( c1.getCents() + c2.getCents() );
     // }
+    
     Cents& operator +(const Cents &c1)
     {
         this->m_cents += c1.m_cents;
