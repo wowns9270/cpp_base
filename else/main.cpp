@@ -70,4 +70,3 @@ int main()
     // capacity 
     // 포인터 
 }
-
