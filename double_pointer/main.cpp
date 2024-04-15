@@ -29,6 +29,12 @@ void *get()
     return static_cast<void *>(ptr);
 }
 
+void gogo2(Man *ptr)
+{
+    ptr = new Man();
+    ptr->age = 10;
+}
+
 int main()
 {
     Man *ptr = nullptr;
@@ -38,4 +44,7 @@ int main()
     std::cout << ptr->age << std::endl;
     std::cout << ptr->grade << std::endl;
     std::cout << ptr->score << std::endl;
+
+    Man *ptr2 = nullptr;
+    gogo2(ptr);
 }
